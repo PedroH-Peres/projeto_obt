@@ -4,6 +4,6 @@ Projeto OBT
 
 <h6>Hello World<h4>
 
-Este projeto é feito com o framework Flutter para para ser utilizado na competição OBT 2022.
+Este projeto é feito com o framework Flutter para ser utilizado na competição OBT 2022.
   
 Equipe: Supernova
