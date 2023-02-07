@@ -1,11 +1,6 @@
 # projeto_obt
 
-<h1 id='teste'>Teste</h1>
-<style type="text/css"> 
-  h1{
-    color='blue';
-  }
-</style>
+<h1 style="color:white;padding:30px;">Teste</h1>
 
 ## Getting Started
 
