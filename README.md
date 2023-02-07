@@ -1,6 +1,6 @@
 # projeto_obt
 
-<h1 style="color:white;padding:30px;">Teste</h1>
+<h1 style="color:blue;padding:30px;">Teste</h1>
 
 ## Getting Started
 
