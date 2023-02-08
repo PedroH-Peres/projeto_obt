@@ -9,20 +9,23 @@ class AppDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
         child: SafeArea(
-          child: Column(
-          children: [
-            Container(
-          padding: EdgeInsets.symmetric(horizontal: 18),
-          child: Container(
-            decoration: BoxDecoration(border: Border.all(width: 3)),
-            child: Row(children: [
-            Icon(Icons.home),
-            SizedBox(width: 15,),
-            Text("Página inicial"),
-              ],),
-          ),)
-          ],
+      child: Column(
+        children: [
+          Divider(),
+          GestureDetector(
+            onTap: () => Navigator.of(context).pop(),
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+              child: Row(children: const [
+                Icon(Icons.home),
+                SizedBox(width: 20,),
+                Text("Página Inicial"),
+              ]),
+            ),
           ),
-        ));
+          Divider()
+        ],
+      ),
+    ));
   }
 }
