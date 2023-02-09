@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "78636761270",
+    "project_id": "projetoobt-5a2f8",
+    "storage_bucket": "projetoobt-5a2f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78636761270:android:ff2129ec8e513e51e56617",
+        "android_client_info": {
+          "package_name": "com.supernova.obt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78636761270-l2e1e1m1anuob66qao3m6q9ck39fe782.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqScKNl9Jm6s945VM-13HufEs2rZf9daI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78636761270-l2e1e1m1anuob66qao3m6q9ck39fe782.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
