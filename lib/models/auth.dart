@@ -7,7 +7,7 @@ class Auth {
   String tipoConta = 'aluno';
 
 
-  AuthMode _mode = AuthMode.Login;
+  AuthMode _mode = AuthMode.Signup;
 
   bool get isLogin {
     return _mode == AuthMode.Login;

@@ -4,6 +4,9 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:projeto_obt/components/app_drawer.dart';
 import 'package:projeto_obt/pages/chat_page.dart';
 
+import '../core/auth/auth_service.dart';
+import '../core/models/app_user.dart';
+
 class FeedPage extends StatelessWidget {
   const FeedPage({super.key});
 
@@ -20,7 +23,7 @@ class FeedPage extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        child: const Center(child: Text("Feed page"),),
+        child: Center(child: Text("Feed Page | Olá, ${AuthService().currentUser!.name}!!"),),
       ),
     );
   }

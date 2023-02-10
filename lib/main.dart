@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_obt/pages/auth_or_page.dart';
 import 'package:projeto_obt/pages/auth_page.dart';
 import 'package:projeto_obt/pages/feed_page.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const AuthPage(),
+      home: const AuthOrPage(),
       debugShowCheckedModeBanner: false,
     );
   }

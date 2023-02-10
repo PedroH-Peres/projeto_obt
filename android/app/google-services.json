@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "78636761270",
-    "project_id": "projetoobt-5a2f8",
-    "storage_bucket": "projetoobt-5a2f8.appspot.com"
+    "project_number": "587137949789",
+    "project_id": "projetoobt-5065e",
+    "storage_bucket": "projetoobt-5065e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:78636761270:android:ff2129ec8e513e51e56617",
+        "mobilesdk_app_id": "1:587137949789:android:30b849a9c9d74a18316db4",
         "android_client_info": {
-          "package_name": "com.supernova.obt"
+          "package_name": "com.equipesupernova.obt"
         }
       },
       "oauth_client": [
         {
-          "client_id": "78636761270-l2e1e1m1anuob66qao3m6q9ck39fe782.apps.googleusercontent.com",
+          "client_id": "587137949789-3uenqdpd7lfla1qcnvildg5ubp3ipldr.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCqScKNl9Jm6s945VM-13HufEs2rZf9daI"
+          "current_key": "AIzaSyCYVs5kQr905anbdMp5tT4ukyeNDOZj4YM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "78636761270-l2e1e1m1anuob66qao3m6q9ck39fe782.apps.googleusercontent.com",
+              "client_id": "587137949789-3uenqdpd7lfla1qcnvildg5ubp3ipldr.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

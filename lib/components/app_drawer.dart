@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:projeto_obt/core/auth/auth_service.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});
@@ -23,7 +24,13 @@ class AppDrawer extends StatelessWidget {
               ]),
             ),
           ),
-          Divider()
+          Divider(),
+          TextButton(onPressed: (){
+            AuthService().logout();
+          }, child: Row(children: [
+            Icon(Icons.exit_to_app),
+            Text("Sair")
+          ],))
         ],
       ),
     ));
