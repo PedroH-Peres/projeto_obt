@@ -4,10 +4,11 @@ class AppUser{
   final String email;
   final String tipoConta;
 
-  const AppUser({
+  AppUser({
     required this.id,
     required this.name,
     required this.email,
-    required this.tipoConta
+    required this.tipoConta,
   });
+
 }

@@ -5,6 +5,7 @@ class Auth {
   String email = '';
   String password = '';
   String tipoConta = 'aluno';
+  static bool firstTime = false;
 
 
   AuthMode _mode = AuthMode.Signup;
@@ -15,6 +16,14 @@ class Auth {
 
   bool get isSignup {
     return _mode == AuthMode.Signup;
+  }
+
+  static bool get isFirstTime{
+    return firstTime;
+  }
+
+  static void setFirstTime(){
+    firstTime = true;
   }
 
   void toggleAuthMode() {

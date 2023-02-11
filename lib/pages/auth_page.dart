@@ -22,12 +22,15 @@ class _AuthPageState extends State<AuthPage> {
       if (data.isLogin) {
         await AuthService().login(data.email, data.password);
       } else {
+        Auth.setFirstTime();
+        print(Auth.isFirstTime);
         await AuthService().signup(
           data.name,
           data.email,
           data.password,
           data.tipoConta,
         );
+        
       }
     } catch (error) {
       print(error);
