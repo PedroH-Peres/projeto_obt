@@ -5,6 +5,8 @@ import 'package:projeto_obt/components/app_drawer.dart';
 import 'package:projeto_obt/components/first_time.dart';
 import 'package:projeto_obt/models/auth.dart';
 import 'package:projeto_obt/pages/chat_page.dart';
+import 'package:projeto_obt/pages/perfil_page.dart';
+import 'package:projeto_obt/utils/approutes.dart';
 
 import '../core/auth/auth_service.dart';
 import '../core/models/app_user.dart';
@@ -21,9 +23,11 @@ class FeedPage extends StatelessWidget {
               title: const Text("Feed"),
               actions: [
                 IconButton(
-                    onPressed: () => Navigator.of(context).push(
-                        MaterialPageRoute(builder: ((context) => ChatPage()))),
-                    icon: Icon(Icons.chat))
+                    onPressed: () => Navigator.of(context).pushNamed(AppRoutes.chatPage),
+                    icon: const Icon(Icons.chat)),
+                IconButton(
+                    onPressed: () => Navigator.of(context).pushNamed(AppRoutes.perfilPage),
+                    icon: const Icon(Icons.person))
               ],
             ),
             drawer: AppDrawer(),

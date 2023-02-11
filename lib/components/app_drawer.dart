@@ -25,10 +25,15 @@ class AppDrawer extends StatelessWidget {
             ),
           ),
           Divider(),
+          Expanded(child: Container()),
+          Divider(),
           TextButton(onPressed: (){
             AuthService().logout();
-          }, child: Row(children: [
+          }, child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
             Icon(Icons.exit_to_app),
+            SizedBox(width: 5,),
             Text("Sair")
           ],))
         ],
