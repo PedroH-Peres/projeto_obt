@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -12,6 +14,23 @@ class PerfilPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Meu Perfil"),
+        actions: [
+          IconButton(
+              onPressed: () {
+                showDialog(context: context, builder: (context)=> Center(
+                  child: Container(
+                    width: 250,
+                    height: 300,
+                    decoration: BoxDecoration(color: Colors.white),
+                    child: Column(children: [
+                      SizedBox(height: 8,),
+                    Text("Configurações", style: TextStyle(fontSize: 16, color: Colors.black, inherit: false),),
+                    TextButton(onPressed: null, child: Text("Trocar imagem"))
+                  ],)),
+                ));
+              },
+              icon: Icon(Icons.settings))
+        ],
       ),
       body: Column(
         children: [
@@ -32,17 +51,38 @@ class PerfilPage extends StatelessWidget {
                         size: 85,
                       ),
                     )),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start
-                    ,children: [
-                    Text('Nome: ${AuthService().currentUser!.name}', style: TextStyle(fontSize: 15),),
-                    SizedBox(height: 14,),
-                    Text('Tipo de conta: ${AuthService().currentUser!.tipoConta}', style: TextStyle(fontSize: 15),)
-                  ],)
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Nome: ${AuthService().currentUser!.name}',
+                      style: TextStyle(fontSize: 15),
+                    ),
+                    SizedBox(
+                      height: 14,
+                    ),
+                    Text(
+                      'Tipo de conta: ${AuthService().currentUser!.tipoConta}',
+                      style: TextStyle(fontSize: 15),
+                    )
+                  ],
+                )
               ],
             ),
           ),
-          Center(child: Text("Informações:"))
+          const Text("Informações:"),
+          Expanded(
+            child: Container(
+              margin: const EdgeInsets.all(12),
+              alignment: Alignment.centerLeft,
+              child: Column(
+                children: [
+                  Text("Email: ${AuthService().currentUser!.email}"),
+                  Text("... Demais dados")
+                ],
+              ),
+            ),
+          )
         ],
       ),
     );

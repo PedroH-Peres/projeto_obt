@@ -54,17 +54,12 @@ class _AuthPageState extends State<AuthPage> {
                   fontSize: 30, color: Colors.white, fontWeight: FontWeight.bold),
             ),
             SizedBox(
-              height: 30,
+              height: 24,
             ),
             SingleChildScrollView(
                 child: AuthForm(
               onSubmit: _handleSubmit,
             )),
-            Text(
-              "by: Pedro H. Peres",
-              style: TextStyle(fontSize: 13, color: Colors.white),
-            ),
-            SizedBox(height: 12,),
             Text("Equipe Supernova",style: TextStyle(fontSize: 13, color: Colors.white))
           ],
         ),

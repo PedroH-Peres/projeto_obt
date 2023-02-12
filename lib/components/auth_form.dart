@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:projeto_obt/core/auth/auth_service.dart';
 import 'package:projeto_obt/models/auth.dart';
 import 'package:projeto_obt/pages/feed_page.dart';
 
@@ -20,7 +21,6 @@ class _AuthFormState extends State<AuthForm> {
 
   var dropDownValue = 'Aluno';
 
-
   void _submit() {
     final isValid = _formKey.currentState?.validate() ?? false;
     if (!isValid) return;
@@ -31,9 +31,9 @@ class _AuthFormState extends State<AuthForm> {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: const EdgeInsets.all(20),
+      margin: const EdgeInsets.all(15),
       child: Padding(
-        padding: const EdgeInsets.all(12),
+        padding: const EdgeInsets.all(10),
         child: Form(
           key: _formKey,
           child: Column(
@@ -43,6 +43,12 @@ class _AuthFormState extends State<AuthForm> {
                   key: const ValueKey("nome"),
                   initialValue: _formData.name,
                   onChanged: ((nome) => _formData.name = nome),
+                  validator: ((value) {
+                    if (value!.length <= 3) {
+                      return "O nome deve conter pelo menos 4 caracteres.";
+                    }
+                    return null;
+                  }),
                   decoration: const InputDecoration(labelText: "Nome"),
                 ),
               TextFormField(
@@ -50,12 +56,24 @@ class _AuthFormState extends State<AuthForm> {
                 initialValue: _formData.email,
                 onChanged: ((email) => _formData.email = email),
                 decoration: const InputDecoration(labelText: "Email"),
+                validator: ((value) {
+                  if(!value!.contains('@') && value.length <= 10){
+                    return "E-mail inválido.";
+                  }
+                  return null;
+                }),
               ),
               TextFormField(
                 key: const ValueKey("senha"),
                 initialValue: _formData.password,
                 obscureText: true,
                 onChanged: ((senha) => _formData.password = senha),
+                validator: ((value) {
+                  if(value!.length <= 7){
+                    return "A senha deve conter ao menos 8 caracteres.";
+                  }
+                  return null;
+                }),
                 decoration: const InputDecoration(labelText: "Senha"),
               ),
               if (!_formData.isLogin)
@@ -84,17 +102,24 @@ class _AuthFormState extends State<AuthForm> {
                   ],
                 ),
               const SizedBox(
-                height: 15,
+                height: 10,
               ),
-              ElevatedButton(
-                  onPressed: _submit, child: const Text("Confirmar")),
-              TextButton(
-                onPressed: () {
-                  setState(() {
-                    _formData.toggleAuthMode();
-                  });
-                },
-                child: Text(_formData.isLogin ? "Não possui conta?" : "Já tem conta?"),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  TextButton(
+                    onPressed: () {
+                      setState(() {
+                        _formData.toggleAuthMode();
+                      });
+                    },
+                    child: Text(_formData.isLogin
+                        ? "Não possui conta?"
+                        : "Já tem conta?"),
+                  ),
+                  ElevatedButton(
+                      onPressed: _submit, child: const Text("Confirmar")),
+                ],
               )
             ],
           ),

@@ -26,7 +26,6 @@ class MyApp extends StatelessWidget {
         '/feed':(context) => FeedPage(),
         '/perfil': (context)=> PerfilPage(),
         '/chat':(context) => ChatPage()
-
       },
       debugShowCheckedModeBanner: false,
     );

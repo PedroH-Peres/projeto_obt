@@ -5,10 +5,12 @@ import 'package:firebase_core/firebase_core.dart';
 
 class AuthFirebaseService implements AuthService{
   static AppUser? _currentUser;
+  static User? _currentAuthUser;
   static final _userStream = Stream<AppUser?>.multi((controller) async { 
     final authChanges = FirebaseAuth.instance.authStateChanges();
     await for(final user in authChanges){
       _currentUser = user == null ?null : _toAppUser(user);
+      _currentAuthUser = user;
       controller.add(_currentUser);
     }
   });
@@ -17,6 +19,11 @@ class AuthFirebaseService implements AuthService{
   AppUser? get currentUser {
     return _currentUser;
   }
+
+  User? get authUser{
+    return _currentAuthUser;
+  }
+
 
   @override
   Stream<AppUser?> get userChanges{
@@ -65,5 +72,7 @@ class AuthFirebaseService implements AuthService{
       tipoConta: tipoConta ?? 'Aluno',
     );
   }
+  
+
 
 }

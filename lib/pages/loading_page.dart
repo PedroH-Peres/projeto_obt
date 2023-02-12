@@ -10,9 +10,11 @@ class LoadingPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.blueAccent,
       body: Center(
-        child: Column(children: [
-          Text("Carregando..."),
-          CircularProgressIndicator()
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const [
+          Text("Carregando...", style: TextStyle(fontSize: 30,color: Colors.white,),),
+          CircularProgressIndicator(color: Colors.white,)
         ],),
       ),
     );
