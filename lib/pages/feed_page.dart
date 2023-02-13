@@ -32,12 +32,19 @@ class FeedPage extends StatelessWidget {
             ),
             drawer: AppDrawer(),
             body: Container(
-              width: double.infinity,
-              height: double.infinity,
-              child: Center(
-                child: Text(
-                    "Feed Page | Olá, ${AuthService().currentUser!.name}!!"),
-              ),
+              width: MediaQuery.of(context).size.width,
+              height: 600,
+              child: Column(children: [
+                Text("Navegar por profissões:"),
+                Expanded(
+                  child: ListView(
+                    children: [
+                      ListTile(leading: Text("teste"),),
+                      ListTile(leading: Text("teste"),)
+                    ],
+                  ),
+                )
+              ],)
             ),
           );
   }

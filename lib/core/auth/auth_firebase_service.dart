@@ -60,8 +60,6 @@ class AuthFirebaseService implements AuthService{
       _currentUser = _toAppUser(credential.user!, name, tipoConta);
     }
 
-
-
   }
 
   static AppUser _toAppUser(User user, [String? name, String? tipoConta]) {
