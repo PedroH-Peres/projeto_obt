@@ -17,7 +17,7 @@ class FeedPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Auth.isFirstTime
-        ? FirstTimePopup()
+        ? const FirstTimePopup()
         : Scaffold(
             appBar: AppBar(
               title: const Text("Feed"),
@@ -35,7 +35,7 @@ class FeedPage extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               height: 600,
               child: Column(children: [
-                Text("Navegar por profissões:"),
+                const Text("Navegar por profissões:"),
                 Expanded(
                   child: ListView(
                     children: [

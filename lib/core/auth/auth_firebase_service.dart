@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:projeto_obt/core/auth/auth_service.dart';
 import 'package:projeto_obt/core/models/app_user.dart';
@@ -60,6 +61,8 @@ class AuthFirebaseService implements AuthService{
       _currentUser = _toAppUser(credential.user!, name, tipoConta);
     }
 
+    await _saveAppUser(_toAppUser(credential.user!, name, tipoConta));
+
   }
 
   static AppUser _toAppUser(User user, [String? name, String? tipoConta]) {
@@ -69,6 +72,17 @@ class AuthFirebaseService implements AuthService{
       email: user.email!,
       tipoConta: tipoConta ?? 'Aluno',
     );
+  }
+
+  Future<void> _saveAppUser(AppUser user) async {
+    final store = FirebaseFirestore.instance;
+    final docRef = store.collection('users').doc(user.id);
+
+    return docRef.set({
+      'name': user.name,
+      'email': user.email,
+      'tipoConta': user.tipoConta
+    });
   }
   
 
