@@ -84,6 +84,22 @@ class AuthFirebaseService implements AuthService{
       'tipoConta': user.tipoConta
     });
   }
+
+  Future<AppUser> getAppUser(String id) async {
+    final store = FirebaseFirestore.instance;
+    final docRef = store.collection('users').doc(id);
+    final user = await docRef.get();
+
+    return AppUser(id: id, name: user['name'], email: user['email'], tipoConta: user['tipoConta']);
+
+  }
+
+  Future<void> updateAppUser()async{
+
+    final user = await getAppUser(_currentUser!.id);
+    _currentUser = user;
+
+  }
   
 
 

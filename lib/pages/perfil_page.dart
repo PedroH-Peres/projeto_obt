@@ -3,14 +3,17 @@ import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:projeto_obt/core/auth/auth_firebase_service.dart';
 
 import '../core/auth/auth_service.dart';
+import '../core/models/app_user.dart';
 
 class PerfilPage extends StatelessWidget {
-  const PerfilPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+  
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("Meu Perfil"),
@@ -78,7 +81,7 @@ class PerfilPage extends StatelessWidget {
               child: Column(
                 children: [
                   Text("Email: ${AuthService().currentUser!.email}"),
-                  Text("... Demais dados")
+                  Text("...")
                 ],
               ),
             ),

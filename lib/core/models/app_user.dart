@@ -3,6 +3,7 @@ class AppUser{
   final String name;
   final String email;
   final String tipoConta;
+  
 
   AppUser({
     required this.id,
