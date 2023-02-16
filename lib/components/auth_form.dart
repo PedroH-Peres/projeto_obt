@@ -49,13 +49,14 @@ class _AuthFormState extends State<AuthForm> {
                     }
                     return null;
                   }),
-                  decoration: const InputDecoration(labelText: "Nome"),
+                  decoration: const InputDecoration(labelText: "Nome", border: OutlineInputBorder()),
                 ),
+                const SizedBox(height: 5,),
               TextFormField(
                 key: const ValueKey("email"),
                 initialValue: _formData.email,
                 onChanged: ((email) => _formData.email = email),
-                decoration: const InputDecoration(labelText: "Email"),
+                decoration: const InputDecoration(labelText: "Email", border: OutlineInputBorder()),
                 validator: ((value) {
                   if(!value!.contains('@') && value.length <= 10){
                     return "E-mail inválido.";
@@ -63,6 +64,7 @@ class _AuthFormState extends State<AuthForm> {
                   return null;
                 }),
               ),
+              const SizedBox(height: 5,),
               TextFormField(
                 key: const ValueKey("senha"),
                 initialValue: _formData.password,
@@ -74,17 +76,20 @@ class _AuthFormState extends State<AuthForm> {
                   }
                   return null;
                 }),
-                decoration: const InputDecoration(labelText: "Senha"),
+                decoration: const InputDecoration(labelText: "Senha", border: OutlineInputBorder()),
               ),
               if (!_formData.isLogin)
                 Row(
                   children: [
+                    const SizedBox(width: 5,),
                     const Text("Tipo de conta: "),
                     const SizedBox(
-                      width: 8,
+                      width: 12,
                     ),
                     DropdownButton<String>(
                       value: dropDownValue,
+                      elevation: 12,
+                      underline: Container(height: 2, color: Colors.black,),
                       onChanged: (tipo) {
                         setState(() {
                           dropDownValue = tipo ?? 'Aluno';
