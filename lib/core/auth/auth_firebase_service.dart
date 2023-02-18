@@ -65,12 +65,13 @@ class AuthFirebaseService implements AuthService{
 
   }
 
-  static AppUser _toAppUser(User user, [String? name, String? tipoConta]) {
+  static AppUser _toAppUser(User user, [String? name, String? tipoConta, String? bio]) {
     return AppUser(
       id: user.uid,
       name: name ?? user.displayName ?? user.email!.split('@')[0],
       email: user.email!,
       tipoConta: tipoConta ?? 'Aluno',
+      bio: bio ?? ''
     );
   }
 
@@ -81,16 +82,18 @@ class AuthFirebaseService implements AuthService{
     return docRef.set({
       'name': user.name,
       'email': user.email,
-      'tipoConta': user.tipoConta
+      'tipoConta': user.tipoConta,
+      'bio': user.bio
     });
   }
+
 
   Future<AppUser> getAppUser(String id) async {
     final store = FirebaseFirestore.instance;
     final docRef = store.collection('users').doc(id);
     final user = await docRef.get();
 
-    return AppUser(id: id, name: user['name'], email: user['email'], tipoConta: user['tipoConta']);
+    return AppUser(id: id, name: user['name'], email: user['email'], tipoConta: user['tipoConta'], bio: user['bio']);
 
   }
 
