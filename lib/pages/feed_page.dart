@@ -29,7 +29,7 @@ class FeedPage extends StatelessWidget {
                     icon: const Icon(Icons.chat)),
                 IconButton(
                     onPressed: () =>
-                        Navigator.of(context).pushNamed(AppRoutes.perfilPage),
+                        Navigator.of(context).pushReplacementNamed(AppRoutes.perfilPage),
                     icon: const Icon(Icons.person))
               ],
             ),

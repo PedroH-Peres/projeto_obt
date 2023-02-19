@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:projeto_obt/core/auth/auth_service.dart';
+import 'package:projeto_obt/utils/approutes.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});
@@ -17,11 +18,14 @@ class AppDrawer extends StatelessWidget {
             onTap: () => Navigator.of(context).pop(),
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-              child: Row(children: const [
-                Icon(Icons.home),
-                SizedBox(width: 20,),
-                Text("Página Inicial"),
-              ]),
+              child: GestureDetector(
+                onTap: (() => Navigator.pushReplacementNamed(context, AppRoutes.feedPage)),
+                child: Row(children: const [
+                  Icon(Icons.home),
+                  SizedBox(width: 20,),
+                  Text("Página Inicial"),
+                ]),
+              ),
             ),
           ),
           Divider(),

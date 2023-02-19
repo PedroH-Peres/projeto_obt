@@ -3,8 +3,10 @@ import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:projeto_obt/components/app_drawer.dart';
 import 'package:projeto_obt/components/edit_perfil.dart';
 import 'package:projeto_obt/core/auth/auth_firebase_service.dart';
+import 'package:projeto_obt/pages/edit_page.dart';
 
 import '../core/auth/auth_service.dart';
 import '../core/models/app_user.dart';
@@ -24,23 +26,18 @@ class _PerfilPageState extends State<PerfilPage> {
   
 
     return Scaffold(
+      drawer: AppDrawer(),
       appBar: AppBar(
         title: const Text("Meu Perfil"),
         actions: [
           IconButton(
               onPressed: () {
-                if(isEditMode){
-
-                }
-                setState(() {
-                  isEditMode = !isEditMode;
-                });
+                Navigator.of(context).push(MaterialPageRoute(builder: ((context) => EditPage())));
               },
               icon: Icon(isEditMode ? Icons.check_circle_outline: Icons.border_color_outlined, size: 30,))
         ],
       ),
-      body: isEditMode ? EditPerfil()
-      :
+      body: 
       Column(
         children: [
           Card(
