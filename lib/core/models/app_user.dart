@@ -4,6 +4,8 @@ class AppUser{
   final String email;
   final String tipoConta;
   final String? bio;
+  final String? info;
+  final String? profissao;
   
 
   AppUser({
@@ -11,6 +13,8 @@ class AppUser{
     required this.name,
     required this.email,
     required this.tipoConta,
+    this.info,
+    this.profissao,
     this.bio
   });
 
