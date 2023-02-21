@@ -15,8 +15,10 @@ class Profissoes{
     "Psicologia",
     "Geografia",
     "Medicina Veterinária",
-    ""
-
+    "Biotecnologia",
+    "Zootecnia",
+    "Arquitetura",
+    "Estatística"
   ];
 
 }
