@@ -19,6 +19,10 @@ class Profissoes{
     "Zootecnia",
     "Arquitetura",
     "Estatística"
+    "Geologia",
+    "Administração",
+    "Odontologia",
+    "Inteligência Artificial"
   ];
 
 }
