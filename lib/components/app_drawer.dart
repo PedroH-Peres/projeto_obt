@@ -13,29 +13,38 @@ class AppDrawer extends StatelessWidget {
         child: SafeArea(
       child: Column(
         children: [
-          Divider(),
+          const Divider(),
           GestureDetector(
-            onTap: () => Navigator.of(context).pop(),
+            onTap: () => Navigator.of(context).pushReplacementNamed(AppRoutes.feedPage),
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-              child: GestureDetector(
-                onTap: (() => Navigator.pushReplacementNamed(context, AppRoutes.feedPage)),
-                child: Row(children: const [
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+              child: Row(children: const [
                   Icon(Icons.home),
                   SizedBox(width: 20,),
                   Text("Página Inicial"),
                 ]),
-              ),
             ),
           ),
-          Divider(),
+          const Divider(),
+          GestureDetector(
+            onTap: () => Navigator.of(context).pushReplacementNamed(AppRoutes.perfilPage),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+              child: Row(children: const [
+                  Icon(Icons.person_sharp),
+                  SizedBox(width: 20,),
+                  Text("Meu perfil"),
+                ]),
+            ),
+          ),
+          const Divider(),
           Expanded(child: Container()),
-          Divider(),
+          const Divider(),
           TextButton(onPressed: (){
             AuthService().logout();
           }, child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+            children: const[
             Icon(Icons.exit_to_app),
             SizedBox(width: 5,),
             Text("Sair")
