@@ -22,7 +22,12 @@ class Profissoes{
     "Geologia",
     "Administração",
     "Odontologia",
-    "Inteligência Artificial"
+    "Inteligência Artificial",
+    "Cartografia",
+    "História",
+    "Enfermagem",
+    "Fisioterapia",
+    "Marketing"
   ];
 
 }
