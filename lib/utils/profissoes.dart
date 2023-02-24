@@ -18,7 +18,7 @@ class Profissoes{
     "Biotecnologia",
     "Zootecnia",
     "Arquitetura",
-    "Estatística"
+    "Estatística",
     "Geologia",
     "Administração",
     "Odontologia",

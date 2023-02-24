@@ -3,4 +3,5 @@ class AppRoutes{
   static const String authPage = '/auth';
   static const String perfilPage = '/perfil';
   static const String chatPage = '/chat';
+  static const String editPage = '/edit';
 }

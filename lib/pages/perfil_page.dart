@@ -7,6 +7,7 @@ import 'package:projeto_obt/components/app_drawer.dart';
 import 'package:projeto_obt/components/edit_perfil.dart';
 import 'package:projeto_obt/core/auth/auth_firebase_service.dart';
 import 'package:projeto_obt/pages/edit_page.dart';
+import 'package:projeto_obt/utils/approutes.dart';
 
 import '../core/auth/auth_service.dart';
 import '../core/models/app_user.dart';
@@ -28,8 +29,7 @@ class _PerfilPageState extends State<PerfilPage> {
         actions: [
           IconButton(
               onPressed: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: ((context) => EditPage())));
+                Navigator.of(context).pushNamed(AppRoutes.editPage);
               },
               icon: Icon(
                 isEditMode

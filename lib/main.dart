@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:projeto_obt/pages/auth_or_page.dart';
 import 'package:projeto_obt/pages/auth_page.dart';
 import 'package:projeto_obt/pages/chat_page.dart';
+import 'package:projeto_obt/pages/edit_page.dart';
 import 'package:projeto_obt/pages/feed_page.dart';
 import 'package:projeto_obt/pages/perfil_page.dart';
 
@@ -22,10 +23,11 @@ class MyApp extends StatelessWidget {
       ),
       home: const AuthOrPage(),
       routes: {
-        '/auth':(context) => AuthPage(),
-        '/feed':(context) => FeedPage(),
+        '/auth':(context) => const AuthPage(),
+        '/feed':(context) => const FeedPage(),
         '/perfil': (context)=> PerfilPage(),
-        '/chat':(context) => ChatPage()
+        '/chat':(context) => const ChatPage(),
+        '/edit': ((context) => const EditPage())
       },
       debugShowCheckedModeBanner: false,
     );

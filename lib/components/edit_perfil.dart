@@ -41,7 +41,7 @@ class _EditPerfilState extends State<EditPerfil> {
                     fontWeight: FontWeight.bold),
               ),
               Padding(
-                padding: EdgeInsets.all(15),
+                padding: const EdgeInsets.all(15),
                 child: Form(
                   key: _formKey,
                   child: Column(
@@ -52,7 +52,7 @@ class _EditPerfilState extends State<EditPerfil> {
                             border: UnderlineInputBorder(), label: Text("Nome")),
                         initialValue: AuthService().currentUser!.name,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       TextFormField(
@@ -70,17 +70,17 @@ class _EditPerfilState extends State<EditPerfil> {
                     children: [
                       const SizedBox(width: 5,),
                       if(AuthService().currentUser!.tipoConta == "Aluno")
-                        Text("Profissão desejada:"),
+                        const Text("Profissão desejada:"),
                       if(AuthService().currentUser!.tipoConta == "Profissional")
-                        Text("Profissão:"),
-                      SizedBox(
+                        const Text("Profissão:"),
+                      const SizedBox(
                         width: 5,
                       ),
                       DropdownButton<String>(
                         value: ddValue,
                         elevation: 12,
                         underline: Container(height: 2, color: Colors.black,),
-                        style: TextStyle(color: Colors.black, fontSize: 13),
+                        style: const TextStyle(color: Colors.black, fontSize: 13),
                         onChanged: (tipo) {
                           setState(() {
                             ddValue = tipo ?? 'Aluno';
@@ -96,7 +96,7 @@ class _EditPerfilState extends State<EditPerfil> {
                     ],
                     
                   ),
-                  SizedBox(height: 20,),
+                  const SizedBox(height: 20,),
                   TextFormField(
                         key: const ValueKey('info'),
                         keyboardType: TextInputType.multiline,
