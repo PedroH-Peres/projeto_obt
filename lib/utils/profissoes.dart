@@ -27,7 +27,11 @@ class Profissoes{
     "História",
     "Enfermagem",
     "Fisioterapia",
-    "Marketing"
+    "Marketing",
+    "Farmácia",
+    "Sistemas de informação",
+    "Artes cênicas",
+    "Design"
   ];
 
 }
