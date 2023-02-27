@@ -31,7 +31,13 @@ class Profissoes{
     "Farmácia",
     "Sistemas de informação",
     "Artes cênicas",
-    "Design"
+    "Design",
+    "Jornalismo",
+    "Moda",
+    "Música",
+    "Teologia",
+    "Turismo",
+    "Publicidade"
   ];
 
 }
