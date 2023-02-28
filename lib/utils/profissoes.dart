@@ -37,7 +37,9 @@ class Profissoes{
     "Música",
     "Teologia",
     "Turismo",
-    "Publicidade"
+    "Publicidade",
+    "Ciências Sociais",
+    "Jornalismo"
   ];
 
 }
