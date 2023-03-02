@@ -39,7 +39,9 @@ class Profissoes{
     "Turismo",
     "Publicidade",
     "Ciências Sociais",
-    "Jornalismo"
+    "Jornalismo",
+    "Química Industrial",
+    "Historiografia"
   ];
 
 }
