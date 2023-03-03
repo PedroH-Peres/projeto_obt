@@ -41,7 +41,10 @@ class Profissoes{
     "Ciências Sociais",
     "Jornalismo",
     "Química Industrial",
-    "Historiografia"
+    "Historiografia",
+    "Artes Cênicas",
+    "Teatro",
+    
   ];
 
 }
