@@ -44,7 +44,8 @@ class Profissoes{
     "Historiografia",
     "Artes Cênicas",
     "Teatro",
-    
+    "Web Design",
+    "Sistemas de informação"
   ];
 
 }
