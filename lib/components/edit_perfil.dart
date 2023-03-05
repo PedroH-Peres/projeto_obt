@@ -88,7 +88,7 @@ class _EditPerfilState extends State<EditPerfil> {
                         },
                         items: [
                           for(int i = 0; i < Profissoes().profissoes.length; i++)
-                            DropdownMenuItem(value: Profissoes().profissoes[i],child: Text(Profissoes().profissoes[i]))
+                            DropdownMenuItem(value: Profissoes().profissoes[i]["tipo"],child: Text(Profissoes().profissoes[i]["tipo"]!))
                           
                         ]
                           

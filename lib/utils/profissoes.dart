@@ -1,7 +1,50 @@
 class Profissoes{
 
-  List<String> profissoes= [
-    "Engenharia",
+  List<Map<String, String>> profissoes= [
+    {
+      "tipo": "Engenharia",
+      "area": "Exatas"
+    },
+    {
+      "tipo": "Medicina",
+      "area": "Biológicas"
+    },
+    {
+      "tipo": "Biomedicina",
+      "area": "Biológicas",
+    },
+    {
+      "tipo": "Direito",
+      "area": "Humanas",
+    },
+    {
+      "tipo": "Agronomia",
+      "area": "Natureza",
+    },
+    {
+      "tipo": "Ciências Econômicas",
+      "area": "Exatas",
+    },
+    {
+      "tipo": "Física",
+      "area": "Exatas",
+    },
+    {
+      "tipo": "Astronomia",
+      "area": "Exatas",
+    },
+    {
+      "tipo": "Matemática",
+      "area": "Exatas",
+    },
+    {
+      "tipo": "Ciência da Computação",
+      "area": "Exatas",
+    },
+
+
+  ];
+   /*"Engenharia",
     "Medicina",
     "Biomedicina",
     "Direito",
@@ -46,6 +89,5 @@ class Profissoes{
     "Teatro",
     "Web Design",
     "Sistemas de informação"
-  ];
-
+  */
 }
