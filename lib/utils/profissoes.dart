@@ -41,7 +41,15 @@ class Profissoes{
       "tipo": "Ciência da Computação",
       "area": "Exatas",
     },
-
+    {
+      "tipo": "Pedagogia",
+      "area": "Humanas",
+    },
+    {
+      "tipo": "Psicologia",
+      "area": "Biológicas",
+    }
+    
 
   ];
    /*"Engenharia",
