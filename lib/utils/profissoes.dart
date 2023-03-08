@@ -48,6 +48,18 @@ class Profissoes{
     {
       "tipo": "Psicologia",
       "area": "Biológicas",
+    },
+    {
+      "tipo": "Geografia",
+      "area": "Humanas",
+    },
+    {
+      "tipo": "Medicina Veterinária",
+      "area": "Biológicas",
+    },
+    {
+      "tipo": "Biotecnologia",
+      "area": "Biológicas"
     }
     
 
