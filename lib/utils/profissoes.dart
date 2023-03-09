@@ -60,7 +60,23 @@ class Profissoes{
     {
       "tipo": "Biotecnologia",
       "area": "Biológicas"
-    }
+    },
+    {
+      "tipo": "Zootecnia",
+      "area": "Biológicas"
+    },
+    {
+      "tipo": "Arquitetura",
+      "area": "Exatas"
+    },
+    {
+      "tipo": "Estatística",
+      "area": "Exatas"
+    },
+    {
+      "tipo": "Geologia",
+      "area": "Natureza"
+    },
     
 
   ];
