@@ -77,6 +77,22 @@ class Profissoes{
       "tipo": "Geologia",
       "area": "Natureza"
     },
+    {
+      "tipo": "Administração",
+      "area": "Humanas"
+    },
+    {
+      "tipo": "Odontologia",
+      "area": "Biológicas"
+    },
+    {
+      "tipo": "Inteligência Artificial",
+      "area": "Exatas"
+    },
+    {
+      "tipo": "Cartografia",
+      "area": "Exatas"
+    },
     
 
   ];
