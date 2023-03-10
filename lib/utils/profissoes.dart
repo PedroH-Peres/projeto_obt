@@ -93,6 +93,14 @@ class Profissoes{
       "tipo": "Cartografia",
       "area": "Exatas"
     },
+    {
+      "tipo": "História",
+      "area": "Humanas"
+    },
+    {
+      "tipo": "Enfermagem",
+      "area": "Biológicas"
+    }
     
 
   ];
