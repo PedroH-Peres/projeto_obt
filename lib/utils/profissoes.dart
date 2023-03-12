@@ -100,6 +100,10 @@ class Profissoes{
     {
       "tipo": "Enfermagem",
       "area": "Biológicas"
+    },
+    {
+      "tipo": "Fisioterapia",
+      "area": "Biológicas"
     }
     
 
