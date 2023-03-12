@@ -5,6 +5,7 @@ import 'package:projeto_obt/components/app_drawer.dart';
 import 'package:projeto_obt/components/first_time.dart';
 import 'package:projeto_obt/core/auth/auth_firebase_service.dart';
 import 'package:projeto_obt/models/auth.dart';
+import 'package:projeto_obt/pages/area_nav.dart';
 import 'package:projeto_obt/pages/chat_page.dart';
 import 'package:projeto_obt/pages/perfil_page.dart';
 import 'package:projeto_obt/utils/approutes.dart';
@@ -97,6 +98,28 @@ class FeedPage extends StatelessWidget {
                               fontSize: 22,
                               color: Colors.white,
                               fontWeight: FontWeight.bold
+                            ),
+                          ),
+                        ),
+                        GestureDetector(
+                          onTap: (){
+                            Navigator.of(context).push(MaterialPageRoute(builder: ((context) => AreaNav())));
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.all(4),
+                            padding: const EdgeInsets.all(12),
+                            alignment: Alignment.center,
+                            decoration: BoxDecoration(
+                              color: Colors.redAccent,
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: const Text(
+                              "Navegar por áreas",
+                              style: TextStyle(
+                                fontSize: 22,
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold
+                              ),
                             ),
                           ),
                         )
