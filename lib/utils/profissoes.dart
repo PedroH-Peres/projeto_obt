@@ -104,6 +104,10 @@ class Profissoes{
     {
       "tipo": "Fisioterapia",
       "area": "Biológicas"
+    },
+    {
+      "tipo": "Marketing",
+      "area": "Humanas"
     }
     
 
