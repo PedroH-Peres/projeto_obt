@@ -107,7 +107,15 @@ class Profissoes{
     },
     {
       "tipo": "Marketing",
-      "area": "Humanas"
+      "area": "Humanas",
+    },
+    {
+      "tipo": "Farmácia",
+      "area": "Biológicas"
+    },
+    {
+      "tipo": "Sistemas de informação",
+      "area": "Exatas"
     }
     
 
