@@ -116,7 +116,16 @@ class Profissoes{
     {
       "tipo": "Sistemas de informação",
       "area": "Exatas"
+    },
+    {
+      "tipo": "Artes Cênicas",
+      "area": "Humanas"
+    },
+    {
+      "tipo": "Design",
+      "area": "Humanas"
     }
+    
     
 
   ];
