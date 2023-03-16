@@ -124,7 +124,23 @@ class Profissoes{
     {
       "tipo": "Design",
       "area": "Humanas"
-    }
+    },
+    {
+      "tipo": "Jornalismo",
+      "area": "Humanas"
+    },
+    {
+      "tipo": "Moda",
+      "area": "Humanas"
+    },
+    {
+      "tipo": "Música",
+      "area": "Humanas"
+    },
+    {
+      "tipo": "Teologia",
+      "area": "Humanas"
+    },
     
     
 
