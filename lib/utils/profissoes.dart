@@ -141,6 +141,14 @@ class Profissoes{
       "tipo": "Teologia",
       "area": "Humanas"
     },
+    {
+      "tipo": "Turismo",
+      "area": "Humanas"
+    },
+    {
+      "tipo": "Publicidade",
+      "area": "Humanas"
+    },
     
     
 
