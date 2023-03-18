@@ -63,7 +63,7 @@ class Profissoes{
     },
     {
       "tipo": "Zootecnia",
-      "area": "Biológicas"
+      "area": "Natureza"
     },
     {
       "tipo": "Arquitetura",
