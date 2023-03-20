@@ -30,35 +30,37 @@ class _AreaNavState extends State<AreaNav> {
     return Scaffold(
       appBar: AppBar(title: Text("Navegar por área")),
       body: _areaSelected
-          ? Container(
-              child: Column(
-                children: [
-                  Container(
-                    padding: EdgeInsets.all(8),
-                    margin: EdgeInsets.symmetric(vertical: 15),
-                    child: Text(
-                      area,
-                      style: TextStyle(fontSize: 27, fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                  for (int i = 0; i < Profissoes().profissoes.length; i++)
-                    if (Profissoes().profissoes[i]['area'] == area)
-                      Container(
-                        width: double.infinity,
-                        margin: EdgeInsets.symmetric(vertical: 2, horizontal: 12),
-                        padding: EdgeInsets.all(6),
-                        decoration: BoxDecoration(color: Colors.blueAccent),
-                        child: Text(Profissoes().profissoes[i]['tipo']!, textAlign: TextAlign.center,style: TextStyle(fontSize: 18, color: Colors.white),),
+          ? SingleChildScrollView(
+            child: Container(
+                child: Column(
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(8),
+                      margin: EdgeInsets.symmetric(vertical: 15),
+                      child: Text(
+                        area,
+                        style: TextStyle(fontSize: 27, fontWeight: FontWeight.bold),
                       ),
-                  SizedBox(height: 20,),
-                  TextButton(onPressed: (){
-                    setState(() {
-                      _areaSelected = false;
-                    });
-                  }, child: Text("Voltar"))
-                ],
+                    ),
+                    for (int i = 0; i < Profissoes().profissoes.length; i++)
+                      if (Profissoes().profissoes[i]['area'] == area)
+                        Container(
+                          width: double.infinity,
+                          margin: EdgeInsets.symmetric(vertical: 2, horizontal: 12),
+                          padding: EdgeInsets.all(6),
+                          decoration: BoxDecoration(color: Colors.blueAccent),
+                          child: Text(Profissoes().profissoes[i]['tipo']!, textAlign: TextAlign.center,style: TextStyle(fontSize: 18, color: Colors.white),),
+                        ),
+                    SizedBox(height: 20,),
+                    TextButton(onPressed: (){
+                      setState(() {
+                        _areaSelected = false;
+                      });
+                    }, child: Text("Voltar"))
+                  ],
+                ),
               ),
-            )
+          )
           : Container(
               width: double.infinity,
               height: double.infinity,
