@@ -160,6 +160,14 @@ class Profissoes{
     {
       "tipo": "Química Industrial",
       "area": "Natureza"
+    },
+    {
+      "tipo": "Historiografia",
+      "area": "Humanas"
+    },
+    {
+      "tipo": "Artes Cênicas",
+      "area": "Humanas"
     }
     
     
