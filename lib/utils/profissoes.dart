@@ -168,6 +168,10 @@ class Profissoes{
     {
       "tipo": "Artes Cênicas",
       "area": "Humanas"
+    },
+    {
+      "tipo": "Teatro",
+      "area": "Humanas"
     }
     
     
