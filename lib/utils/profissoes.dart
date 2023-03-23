@@ -172,7 +172,16 @@ class Profissoes{
     {
       "tipo": "Teatro",
       "area": "Humanas"
-    }
+    },
+    {
+      "tipo": "Web Design",
+      "area": "Exatas"
+    },
+    {
+      "tipo": "Sistemas da Informação",
+      "area": "Exatas"
+    },
+
     
     
     
