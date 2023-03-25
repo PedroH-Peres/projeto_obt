@@ -8,6 +8,7 @@ import 'package:projeto_obt/models/auth.dart';
 import 'package:projeto_obt/pages/area_nav.dart';
 import 'package:projeto_obt/pages/chat_page.dart';
 import 'package:projeto_obt/pages/perfil_page.dart';
+import 'package:projeto_obt/pages/prof_overview_page.dart';
 import 'package:projeto_obt/utils/approutes.dart';
 import 'package:projeto_obt/utils/profissoes.dart';
 
@@ -44,66 +45,80 @@ class FeedPage extends StatelessWidget {
                     const SizedBox(
                       height: 20,
                     ),
-                    const Text("Navegar por profissões:"),
+                    const Text("Navegar por profissões:", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
                     // Aqui vai uma listView com tópicos de principais profissões pra filtrar.
                     //Botão no final de "Outros cursos"
                     const SizedBox(
-                      height: 12,
+                      height: 18,
                     ),
+                    Divider(),
                     Expanded(
                         child: ListView(
                       children: [
-                        Container(
-                          margin: const EdgeInsets.all(4),
-                          padding: const EdgeInsets.all(12),
-                          decoration: BoxDecoration(
-                            color: Colors.green,
-                            borderRadius: BorderRadius.circular(4),
-                          ),
-                          child: const Text(
-                            "Engenharia",
-                            style: TextStyle(
-                              fontSize: 22,
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold
+                        GestureDetector(
+                          onTap: () => Navigator.of(context).push(
+                              MaterialPageRoute(
+                                  builder: ((context) => ProfOverviewPage()))),
+                          child: Container(
+                            margin: const EdgeInsets.all(4),
+                            padding: const EdgeInsets.all(12),
+                            decoration: BoxDecoration(
+                              color: Colors.green,
+                              borderRadius: BorderRadius.circular(4),
                             ),
-                          ),
-                        ),
-                        Container(
-                          margin: const EdgeInsets.all(4),
-                          padding: const EdgeInsets.all(12),
-                          decoration: BoxDecoration(
-                            color: Colors.green,
-                            borderRadius: BorderRadius.circular(4),
-                          ),
-                          child: const Text(
-                            "Medicina",
-                            style: TextStyle(
-                              fontSize: 22,
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold
-                            ),
-                          ),
-                        ),
-                        Container(
-                          margin: const EdgeInsets.all(4),
-                          padding: const EdgeInsets.all(12),
-                          decoration: BoxDecoration(
-                            color: Colors.green,
-                            borderRadius: BorderRadius.circular(4),
-                          ),
-                          child: const Text(
-                            "Ciência da Computação",
-                            style: TextStyle(
-                              fontSize: 22,
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold
+                            child: const Text(
+                              "Engenharia",
+                              style: TextStyle(
+                                  fontSize: 22,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
                             ),
                           ),
                         ),
                         GestureDetector(
-                          onTap: (){
-                            Navigator.of(context).push(MaterialPageRoute(builder: ((context) => AreaNav())));
+                          onTap: () => Navigator.of(context).push(
+                              MaterialPageRoute(
+                                  builder: ((context) => ProfOverviewPage()))),
+                          child: Container(
+                            margin: const EdgeInsets.all(4),
+                            padding: const EdgeInsets.all(12),
+                            decoration: BoxDecoration(
+                              color: Colors.green,
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: const Text(
+                              "Medicina",
+                              style: TextStyle(
+                                  fontSize: 22,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ),
+                        GestureDetector(
+                          onTap: () => Navigator.of(context).push(
+                              MaterialPageRoute(
+                                  builder: ((context) => ProfOverviewPage()))),
+                          child: Container(
+                            margin: const EdgeInsets.all(4),
+                            padding: const EdgeInsets.all(12),
+                            decoration: BoxDecoration(
+                              color: Colors.green,
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: const Text(
+                              "Ciência da Computação",
+                              style: TextStyle(
+                                  fontSize: 22,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: ((context) => AreaNav())));
                           },
                           child: Container(
                             margin: const EdgeInsets.all(4),
@@ -116,10 +131,9 @@ class FeedPage extends StatelessWidget {
                             child: const Text(
                               "Navegar por áreas",
                               style: TextStyle(
-                                fontSize: 22,
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold
-                              ),
+                                  fontSize: 22,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
                             ),
                           ),
                         )
