@@ -58,7 +58,7 @@ class FeedPage extends StatelessWidget {
                         GestureDetector(
                           onTap: () => Navigator.of(context).push(
                               MaterialPageRoute(
-                                  builder: ((context) => ProfOverviewPage()))),
+                                  builder: ((context) => ProfOverviewPage(name: "Engenharia",)))),
                           child: Container(
                             margin: const EdgeInsets.all(4),
                             padding: const EdgeInsets.all(12),
@@ -78,7 +78,7 @@ class FeedPage extends StatelessWidget {
                         GestureDetector(
                           onTap: () => Navigator.of(context).push(
                               MaterialPageRoute(
-                                  builder: ((context) => ProfOverviewPage()))),
+                                  builder: ((context) => ProfOverviewPage(name: "Medicina",)))),
                           child: Container(
                             margin: const EdgeInsets.all(4),
                             padding: const EdgeInsets.all(12),
@@ -98,7 +98,7 @@ class FeedPage extends StatelessWidget {
                         GestureDetector(
                           onTap: () => Navigator.of(context).push(
                               MaterialPageRoute(
-                                  builder: ((context) => ProfOverviewPage()))),
+                                  builder: ((context) => ProfOverviewPage(name: "Ciência da Computação",)))),
                           child: Container(
                             margin: const EdgeInsets.all(4),
                             padding: const EdgeInsets.all(12),
