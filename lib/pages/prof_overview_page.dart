@@ -12,7 +12,12 @@ class ProfOverviewPage extends StatelessWidget {
         title: Text("Overview"),
       ),
       body: Container(
-        child: Text("Teste"),
+        child: Column(
+          children: [
+            Card(),
+            Text("Hello world")
+          ],
+        ),
       ),
     );
   }
