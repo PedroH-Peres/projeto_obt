@@ -7,11 +7,11 @@ import 'package:projeto_obt/pages/feed_page.dart';
 import 'package:projeto_obt/pages/perfil_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const SupernovaApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const SupernovaApp({super.key});
 
   // This widget is the root of your application.
   @override

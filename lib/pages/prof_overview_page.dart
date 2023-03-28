@@ -10,18 +10,18 @@ class ProfOverviewPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Overview"),
+        title: Text("Visão geral"),
       ),
       body: Container(
         alignment: Alignment.center,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(name, style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),textAlign: TextAlign.center,),
+            Text(name, style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
             Card(
               child: ListTile(title: Text(name)),
             ),
-            Text("Hello world")
+            Text("Outras informaçoes")
           ],
         ),
       ),
