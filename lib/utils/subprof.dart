@@ -6,7 +6,14 @@ class subProf{
         "Engenharia Mecânica",
         "Engenharia Mecatrônica",
         "Engenharia Aeronáutica",
-        "Engenharia de Computação"
+        "Engenharia de Computação",
+        "Engenharia Ambiental",
+        "Engenharia Química",
+        "Engenharia Biomédica",
+        "Engenharia Civil",
+        "Engenharia Física",
+        "Engenharia de Produção",
+        "Engenharia Elétrica"
       ]
     },
     {
