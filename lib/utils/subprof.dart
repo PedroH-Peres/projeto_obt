@@ -17,7 +17,9 @@ class subProf{
         "Engenharia de Controle e Automação",
         "Engenharia Florestal",
         "Engenharia de Pesca",
-        "Engenharia de telecomunicações"
+        "Engenharia de Telecomunicações",
+        "Engenharia Cartográfica e de Agrimensura",
+        "Engenharia Aeroespacial"
       ]
     },
     {
@@ -25,6 +27,7 @@ class subProf{
         "Física Licenciatura",
         "Física Bacharelado",
         "Física Médica",
+        "Física Molecular",
       ]
     }
 
