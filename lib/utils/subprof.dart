@@ -13,7 +13,11 @@ class subProf{
         "Engenharia Civil",
         "Engenharia Física",
         "Engenharia de Produção",
-        "Engenharia Elétrica"
+        "Engenharia Elétrica",
+        "Engenharia de Controle e Automação",
+        "Engenharia Florestal",
+        "Engenharia de Pesca",
+        "Engenharia de telecomunicações"
       ]
     },
     {
