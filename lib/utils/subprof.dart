@@ -29,6 +29,13 @@ class subProf{
         "Física Médica",
         "Física Molecular",
       ]
+    },
+    {
+      "Ciências Sociais": [
+        "Sociologia",
+        "Filosofia",
+        "Geografia Política"
+      ]
     }
 
 
