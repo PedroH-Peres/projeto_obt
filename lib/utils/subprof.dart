@@ -19,7 +19,10 @@ class subProf{
         "Engenharia de Pesca",
         "Engenharia de Telecomunicações",
         "Engenharia Cartográfica e de Agrimensura",
-        "Engenharia Aeroespacial"
+        "Engenharia Aeroespacial",
+        "Engenharia Bioquímica",
+        "Engenharia de Robôs",
+        "Engenharia Eletrônica"
       ]
     },
     {
@@ -28,13 +31,15 @@ class subProf{
         "Física Bacharelado",
         "Física Médica",
         "Física Molecular",
+        "Física Nuclear"
       ]
     },
     {
       "Ciências Sociais": [
         "Sociologia",
         "Filosofia",
-        "Geografia Política"
+        "Geografia Política",
+        
       ]
     }
 
