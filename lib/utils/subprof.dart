@@ -39,6 +39,10 @@ class subProf{
         "Sociologia",
         "Filosofia",
         "Geografia Política",
+        "Administração Pública",
+        "Gestão de Marketing",
+        "Logistica",
+        "Recursos Humanos"
         
       ]
     }
