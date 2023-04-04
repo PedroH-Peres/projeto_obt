@@ -42,7 +42,9 @@ class subProf{
         "Administração Pública",
         "Gestão de Marketing",
         "Logistica",
-        "Recursos Humanos"
+        "Recursos Humanos",
+        "Antropologia",
+        "Ciência Política"
         
       ]
     }
