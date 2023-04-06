@@ -44,7 +44,9 @@ class subProf{
         "Logistica",
         "Recursos Humanos",
         "Antropologia",
-        "Ciência Política"
+        "Ciência Política",
+        "Ciências Contábeis",
+        "Turismo"
         
       ]
     }
