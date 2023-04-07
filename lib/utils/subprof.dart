@@ -22,7 +22,9 @@ class subProf{
         "Engenharia Aeroespacial",
         "Engenharia Bioquímica",
         "Engenharia de Robôs",
-        "Engenharia Eletrônica"
+        "Engenharia Eletrônica",
+        "Engenharia Industrial",
+        "Engenharia de Software"
       ]
     },
     {
@@ -46,7 +48,8 @@ class subProf{
         "Antropologia",
         "Ciência Política",
         "Ciências Contábeis",
-        "Turismo"
+        "Turismo",
+        ""
         
       ]
     }
