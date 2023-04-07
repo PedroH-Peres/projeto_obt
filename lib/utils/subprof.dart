@@ -24,7 +24,10 @@ class subProf{
         "Engenharia de Robôs",
         "Engenharia Eletrônica",
         "Engenharia Industrial",
-        "Engenharia de Software"
+        "Engenharia de Software",
+        "Engenharia Agronômica",
+        "Engenharia Acústica",
+        
       ]
     },
     {
