@@ -52,7 +52,8 @@ class subProf{
         "Ciência Política",
         "Ciências Contábeis",
         "Turismo",
-        ""
+        "Publicidade e Propaganda",
+        "Ciência Política"
         
       ]
     }
