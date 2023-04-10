@@ -36,7 +36,8 @@ class subProf{
         "Física Bacharelado",
         "Física Médica",
         "Física Molecular",
-        "Física Nuclear"
+        "Física Nuclear",
+        "Físico-Química"
       ]
     },
     {
