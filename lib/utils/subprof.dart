@@ -58,6 +58,12 @@ class subProf{
         "Ciência Política"
         
       ]
+    },
+    {
+      "Química": [
+        "Química Industrial",
+        "Bioquímica"
+      ]
     }
 
 
