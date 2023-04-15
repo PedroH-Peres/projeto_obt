@@ -24,7 +24,7 @@ class FeedPage extends StatelessWidget {
         ? const FirstTimePopup()
         : Scaffold(
             appBar: AppBar(
-              title: const Text("Feed"),
+              title: const Text("Página Inicial"),
               actions: [
                 IconButton(
                     onPressed: () =>
