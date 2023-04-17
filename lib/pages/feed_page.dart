@@ -45,8 +45,9 @@ class FeedPage extends StatelessWidget {
                     const SizedBox(
                       height: 20,
                     ),
-                    const Text("Navegar por profissões:", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
-                    Container(child: Text("Aqui vai as filtragens"),),
+                    const Text("Navegar pelas profissões:", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
+                    Container(
+                    child: Text("Aqui vai as filtragens"),),
                     // Aqui vai uma listView com tópicos de principais profissões pra filtrar.
                     //Botão no final de "Outros cursos"
                     const SizedBox(
