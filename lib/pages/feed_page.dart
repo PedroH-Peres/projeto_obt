@@ -62,8 +62,8 @@ class FeedPage extends StatelessWidget {
                               MaterialPageRoute(
                                   builder: ((context) => ProfOverviewPage(name: "Engenharia",)))),
                           child: Container(
-                            margin: const EdgeInsets.all(4),
-                            padding: const EdgeInsets.all(12),
+                            margin: const EdgeInsets.all(5),
+                            padding: const EdgeInsets.all(14),
                             decoration: BoxDecoration(
                               color: Colors.green,
                               borderRadius: BorderRadius.circular(4),
@@ -82,8 +82,8 @@ class FeedPage extends StatelessWidget {
                               MaterialPageRoute(
                                   builder: ((context) => ProfOverviewPage(name: "Medicina",)))),
                           child: Container(
-                            margin: const EdgeInsets.all(4),
-                            padding: const EdgeInsets.all(12),
+                            margin: const EdgeInsets.all(5),
+                            padding: const EdgeInsets.all(14),
                             decoration: BoxDecoration(
                               color: Colors.green,
                               borderRadius: BorderRadius.circular(4),
@@ -102,8 +102,8 @@ class FeedPage extends StatelessWidget {
                               MaterialPageRoute(
                                   builder: ((context) => ProfOverviewPage(name: "Ciência da Computação",)))),
                           child: Container(
-                            margin: const EdgeInsets.all(4),
-                            padding: const EdgeInsets.all(12),
+                            margin: const EdgeInsets.all(5),
+                            padding: const EdgeInsets.all(14),
                             decoration: BoxDecoration(
                               color: Colors.green,
                               borderRadius: BorderRadius.circular(4),
@@ -123,8 +123,8 @@ class FeedPage extends StatelessWidget {
                                 builder: ((context) => AreaNav())));
                           },
                           child: Container(
-                            margin: const EdgeInsets.all(4),
-                            padding: const EdgeInsets.all(12),
+                            margin: const EdgeInsets.all(5),
+                            padding: const EdgeInsets.all(14),
                             alignment: Alignment.center,
                             decoration: BoxDecoration(
                               color: Colors.redAccent,
