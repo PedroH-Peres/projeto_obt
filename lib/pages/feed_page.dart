@@ -109,7 +109,7 @@ class FeedPage extends StatelessWidget {
                               borderRadius: BorderRadius.circular(4),
                             ),
                             child: const Text(
-                              "Direito",
+                              "Ciencia da computação",
                               style: TextStyle(
                                   fontSize: 22,
                                   color: Colors.white,
