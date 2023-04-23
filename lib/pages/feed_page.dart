@@ -106,7 +106,7 @@ class FeedPage extends StatelessWidget {
                             padding: const EdgeInsets.all(14),
                             decoration: BoxDecoration(
                               color: Colors.green,
-                              borderRadius: BorderRadius.circular(4),
+                              borderRadius: BorderRadius.circular(6),
                             ),
                             child: const Text(
                               "Ciencia da computação",
@@ -133,7 +133,7 @@ class FeedPage extends StatelessWidget {
                             child: const Text(
                               "Navegar por áreas",
                               style: TextStyle(
-                                  fontSize: 22,
+                                  fontSize: 21,
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold),
                             ),
