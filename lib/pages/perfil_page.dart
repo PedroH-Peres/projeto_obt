@@ -76,8 +76,11 @@ class _PerfilPageState extends State<PerfilPage> {
                       height: 14,
                     ),
                     Text(
-                      AuthService().currentUser!.profissao ??
-                          "Profissão não registrada",
+                      
+                      AuthService().currentUser!.tipoConta == "Profissional"
+                      ? AuthService().currentUser!.profissao ??
+                          "Profissão não registrada"
+                      : "",
                       style: TextStyle(
                         color: AuthService().currentUser!.profissao == null ? Colors.red : Color.fromRGBO(0, 150, 0, 1), fontWeight: FontWeight.bold
                       )),
