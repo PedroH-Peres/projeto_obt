@@ -37,7 +37,6 @@ class subProf{
         "Física Médica",
         "Física Molecular",
         "Física Nuclear",
-        "Físico-Química",
         "Física de Materiais"
       ]
     },
