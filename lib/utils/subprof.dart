@@ -61,7 +61,8 @@ class subProf{
     {
       "Química": [
         "Química Industrial",
-        "Bioquímica"
+        "Química Licenciatura",
+        "Química Bacharelado"
       ]
     }
 
