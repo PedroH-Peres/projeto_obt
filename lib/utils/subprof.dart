@@ -25,7 +25,6 @@ class subProf{
         "Engenharia Eletrônica",
         "Engenharia Industrial",
         "Engenharia de Software",
-        "Engenharia Agronômica",
         "Engenharia Acústica",
         
       ]
