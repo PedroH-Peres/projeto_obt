@@ -154,10 +154,6 @@ class Profissoes{
       "area": "Humanas"
     },
     {
-      "tipo": "Jornalismo",
-      "area": "Humanas"
-    },
-    {
       "tipo": "Química Industrial",
       "area": "Natureza"
     },
