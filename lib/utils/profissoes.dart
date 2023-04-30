@@ -173,10 +173,7 @@ class Profissoes{
       "tipo": "Web Design",
       "area": "Exatas"
     },
-    {
-      "tipo": "Sistemas da Informação",
-      "area": "Exatas"
-    },
+
 
     
     

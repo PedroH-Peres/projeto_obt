@@ -13,7 +13,10 @@ class AppDrawer extends StatelessWidget {
         child: SafeArea(
       child: Column(
         children: [
-          const Divider(),
+          const SizedBox(height: 18,),
+          const Text("Projeto  OBT", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),),
+          const Divider(color: Colors.black,),
+          const SizedBox(height: 5,),
           GestureDetector(
             onTap: () => Navigator.of(context).pushReplacementNamed(AppRoutes.feedPage),
             child: Container(
