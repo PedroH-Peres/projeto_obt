@@ -61,43 +61,69 @@ class _PerfilPageState extends State<PerfilPage> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    SizedBox(
+                      height: 20,
+                    ),
                     Text(
                       'Nome: ${AuthService().currentUser!.name}',
-                      style: TextStyle(fontSize: 15),
+                      style: TextStyle(fontSize: 18),
                     ),
                     const SizedBox(
                       height: 14,
                     ),
                     Text(
                       'Tipo de conta: ${AuthService().currentUser!.tipoConta}',
-                      style: TextStyle(fontSize: 15),
+                      style: TextStyle(fontSize: 18),
                     ),
                     const SizedBox(
                       height: 14,
                     ),
                     Text(
-                      
-                      AuthService().currentUser!.tipoConta == "Profissional"
-                      ? AuthService().currentUser!.profissao ??
-                          "Profissão não registrada"
-                      : "",
-                      style: TextStyle(
-                        color: AuthService().currentUser!.profissao == null ? Colors.red : Color.fromRGBO(0, 150, 0, 1), fontWeight: FontWeight.bold
-                      )),
+                        AuthService().currentUser!.tipoConta == "Profissional"
+                            ? AuthService().currentUser!.profissao ??
+                                "Profissão não registrada"
+                            : "",
+                        style: TextStyle(
+                            color: AuthService().currentUser!.profissao == null
+                                ? Colors.red
+                                : Color.fromRGBO(0, 150, 0, 1),
+                            fontWeight: FontWeight.bold)),
                   ],
                 )
               ],
             ),
           ),
-          const Text("Informações:"),
+          SizedBox(
+            height: 5,
+          ),
+          const Text(
+            "Informações:",
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+          ),
+          SizedBox(
+            height: 8,
+          ),
           Expanded(
             child: Container(
               margin: const EdgeInsets.all(12),
               alignment: Alignment.centerLeft,
               child: Column(
                 children: [
-                  Text("Email: ${AuthService().currentUser!.email}"),
-                  Text("...")
+                  Container(
+                    padding: EdgeInsets.symmetric(vertical: 3),
+                    height: 50,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(190, 68, 137, 255),
+                      borderRadius: BorderRadius.circular(8)
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                      Text("Curso desejado", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),),
+                      Text("{Aqui vai o curso}"),
+                    ],),
+                  )
                 ],
               ),
             ),

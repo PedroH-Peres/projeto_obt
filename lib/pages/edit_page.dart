@@ -9,7 +9,9 @@ class EditPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Editar"),),
+      appBar: AppBar(title: Text("Editar"), actions: [
+        IconButton(onPressed: (){Navigator.of(context).pop();}, icon: Icon(Icons.check))
+      ],),
       body: EditPerfil(),
     );
   }
