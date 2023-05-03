@@ -62,7 +62,7 @@ class FeedPage extends StatelessWidget {
                             padding: const EdgeInsets.all(14),
                             decoration: BoxDecoration(
                               color: Colors.green,
-                              borderRadius: BorderRadius.circular(4),
+                              borderRadius: BorderRadius.circular(5),
                             ),
                             child: const Text(
                               "Engenharia",
@@ -82,7 +82,7 @@ class FeedPage extends StatelessWidget {
                             padding: const EdgeInsets.all(14),
                             decoration: BoxDecoration(
                               color: Colors.green,
-                              borderRadius: BorderRadius.circular(4),
+                              borderRadius: BorderRadius.circular(5),
                             ),
                             child: const Text(
                               "Medicina",
@@ -102,7 +102,7 @@ class FeedPage extends StatelessWidget {
                             padding: const EdgeInsets.all(14),
                             decoration: BoxDecoration(
                               color: Colors.green,
-                              borderRadius: BorderRadius.circular(6),
+                              borderRadius: BorderRadius.circular(5),
                             ),
                             child: const Text(
                               "Ciencia da computação",
@@ -124,7 +124,7 @@ class FeedPage extends StatelessWidget {
                             alignment: Alignment.center,
                             decoration: BoxDecoration(
                               color: Colors.redAccent,
-                              borderRadius: BorderRadius.circular(4),
+                              borderRadius: BorderRadius.circular(5),
                             ),
                             child: const Text(
                               "Navegar por áreas",
