@@ -24,7 +24,6 @@ class subProf{
         "Engenharia Eletrônica e de telecomunicações",
         "Engenharia Industrial",
         "Engenharia de Software",
-        "Engenharia Acústica",
         
       ]
     },
@@ -45,7 +44,6 @@ class subProf{
         "Geografia Política",
         "Administração Pública",
         "Gestão de Marketing",
-        "Logistica",
         "Recursos Humanos",
         "Antropologia",
         "Ciência Política",
