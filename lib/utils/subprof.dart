@@ -22,7 +22,6 @@ class subProf{
         "Engenharia Bioquímica",
         "Engenharia de Robôs",
         "Engenharia Eletrônica e de telecomunicações",
-        "Engenharia Industrial",
         "Engenharia de Software",
         
       ]
