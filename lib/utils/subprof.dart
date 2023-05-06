@@ -16,7 +16,6 @@ class subProf{
         "Engenharia Elétrica",
         "Engenharia de Controle e Automação",
         "Engenharia Florestal",
-        "Engenharia de Pesca",
         "Engenharia Cartográfica e de Agrimensura",
         "Engenharia Aeroespacial",
         "Engenharia Bioquímica",
@@ -31,7 +30,6 @@ class subProf{
         "Física Licenciatura",
         "Física Bacharelado",
         "Física Médica",
-        "Física Molecular",
         "Física Nuclear",
         "Física de Materiais"
       ]
