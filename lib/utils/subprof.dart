@@ -18,7 +18,6 @@ class subProf{
         "Engenharia Florestal",
         "Engenharia Cartográfica e de Agrimensura",
         "Engenharia Aeroespacial",
-        "Engenharia Bioquímica",
         "Engenharia de Robôs",
         "Engenharia Eletrônica e de telecomunicações",
         "Engenharia de Software",
