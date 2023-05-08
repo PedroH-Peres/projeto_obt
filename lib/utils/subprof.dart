@@ -40,7 +40,6 @@ class subProf{
         "Geografia Política",
         "Administração Pública",
         "Gestão de Marketing",
-        "Recursos Humanos",
         "Antropologia",
         "Ciência Política",
         "Ciências Contábeis",
