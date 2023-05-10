@@ -19,9 +19,7 @@ class subProf{
         "Engenharia Cartográfica e de Agrimensura",
         "Engenharia Aeroespacial",
         "Engenharia de Robôs",
-        "Engenharia Eletrônica e de telecomunicações",
-        "Engenharia de Software",
-        
+        "Engenharia Eletrônica e de telecomunicações",     
       ]
     },
     {
