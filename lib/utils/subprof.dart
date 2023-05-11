@@ -35,7 +35,6 @@ class subProf{
       "Ciências Sociais": [
         "Sociologia",
         "Filosofia",
-        "Geografia Política",
         "Administração Pública",
         "Gestão de Marketing",
         "Antropologia",
